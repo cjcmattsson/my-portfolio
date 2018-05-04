@@ -8,9 +8,14 @@
     "react-scripts": "1.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "npm run watch-css & react-scripts start",
+    "build": "npm run build-css && react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "build-css": "node-sass src/assets/styles/style.scss src/index.css",
+    "watch-css": "node-sass src/assets/styles/style.scss src/index.css -w"
+  },
+  "devDependencies": {
+    "node-sass": "^4.9.0"
   }
 }

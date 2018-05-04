@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import './HeroPage.css';
+import '../../index.css';
 
 class HeroPage extends Component {
   render() {
     return (
       <div className="heroPage">
-        <div className="container">
+        <div className="heroContainer">
           <h1>{this.props.text}</h1>
         </div>
       </div>
