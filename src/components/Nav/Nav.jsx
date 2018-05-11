@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import NavItem from '../NavItem/NavItem.jsx';
-import '../../index.css';
 
 class Nav extends Component {
   render(){

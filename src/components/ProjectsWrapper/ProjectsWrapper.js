@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 // import Project from '../Project/Project';
-import '../../index.css';
 
 class ProjectsWrapper extends Component {
 
