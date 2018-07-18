@@ -5,7 +5,7 @@ import Nav from '../Nav/Nav.jsx';
 import NavLinks from '../NavItem/NavLinks';
 
 import HeroPage from '../HeroPage/HeroPage';
-import ProjectsWrapper from '../ProjectsWrapper/ProjectsWrapper';
+import LandingProjectsWrapper from '../LandingProjectsWrapper/LandingProjectsWrapper';
 
 
 class App extends Component {
@@ -14,7 +14,7 @@ class App extends Component {
       <div className="App">
         <Nav navlinks={NavLinks}/>
         <HeroPage text="Welcome Suckas"/>
-        <ProjectsWrapper />
+        <LandingProjectsWrapper />
       </div>
     );
   }
