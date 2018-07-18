@@ -1,15 +1,15 @@
 const NavLinks = [
   {
     name: 'Projects',
-    link: "#"
+    link: "/projects"
   },
   {
     name: "About",
-    link: "#"
+    link: "/about"
   },
   {
     name: "Contact",
-    link: "#"
+    link: "/contact"
   }
 ];
 
