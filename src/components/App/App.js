@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import '../../index.css';
 
 import Nav from '../Nav/Nav.jsx';
 import NavLinks from '../NavItem/NavLinks';
@@ -9,6 +8,7 @@ import LandingProjectsWrapper from '../LandingProjectsWrapper/LandingProjectsWra
 
 
 class App extends Component {
+
   render() {
     return (
       <div className="App">
