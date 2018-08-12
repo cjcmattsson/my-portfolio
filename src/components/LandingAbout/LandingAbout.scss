@@ -1,15 +1,15 @@
-.projectsWrapper {
+.aboutWrapper {
   max-width: 800px;
   margin-top: 10vh;
   height: auto;
 
-  .projectsHeader {
+  .aboutHeader {
     width: 100%;
     height: auto;
     display: flex;
     align-items: flex-start;
     flex-direction: column;
-    border: 1px solid green;
+    border: 1px solid red;
 
     h1 {
       margin: 10px 0 5px;
@@ -24,17 +24,5 @@
             width: 100%;
         }
     }
-}
-
-
-  .projectsContainer {
-    width: 100%;
-    height: auto;
-    max-width: 800px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    border: 1px solid black;
   }
 }
