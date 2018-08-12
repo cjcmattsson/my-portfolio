@@ -29,7 +29,8 @@ body {
   display: flex;
   justify-content: center;
   border: 1px solid black;
-  padding: 0 25px; }
+  padding: 0 25px;
+  z-index: 1000; }
   .Navbar .navContent {
     border: 1px solid black;
     height: 100%;
@@ -151,7 +152,8 @@ body {
 .aboutWrapper {
   max-width: 800px;
   margin-top: 10vh;
-  height: auto; }
+  height: auto;
+  border: 1px solid black; }
   .aboutWrapper .aboutHeader {
     width: 100%;
     height: auto;
@@ -167,17 +169,68 @@ body {
     @media only screen and (max-width: 750px) {
       .aboutWrapper .aboutHeader p {
         width: 100%; } }
+  .aboutWrapper .aboutSection .aboutSectionContent {
+    height: 130px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 15px 0; }
+    .aboutWrapper .aboutSection .aboutSectionContent p {
+      margin: 0;
+      width: 80%; }
+      .aboutWrapper .aboutSection .aboutSectionContent p span {
+        font-weight: bold; }
+    .aboutWrapper .aboutSection .aboutSectionContent .aboutImage {
+      height: 100%;
+      width: 130px;
+      background-color: #16395c; }
+
+.contactWrapper {
+  max-width: 800px;
+  margin: 10vh 0;
+  height: auto;
+  border: 1px solid black; }
+  .contactWrapper .contactHeader {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    border: 1px solid red; }
+    .contactWrapper .contactHeader h1 {
+      margin: 10px 0 5px; }
+    .contactWrapper .contactHeader p {
+      margin: 5px 0 25px;
+      width: 80%; }
+    @media only screen and (max-width: 750px) {
+      .contactWrapper .contactHeader p {
+        width: 100%; } }
 
 .footerWrapper {
   width: 100vw;
   border-top: 1px solid black;
   display: flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  padding: 25px 25px; }
   .footerWrapper .footerContent {
     max-width: 800px;
     width: 100%;
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-between; }
+    align-items: flex-start; }
+    .footerWrapper .footerContent div {
+      margin-right: 120px; }
+      .footerWrapper .footerContent div p {
+        font-size: 14px; }
+    .footerWrapper .footerContent div:nth-child(3) {
+      margin-left: auto;
+      margin-right: 0; }
+  @media only screen and (max-width: 750px) {
+    .footerWrapper .footerContent {
+      display: flex;
+      flex-direction: column; }
+      .footerWrapper .footerContent div {
+        margin-right: 0; }
+      .footerWrapper .footerContent div:nth-child(3) {
+        margin-left: 0; } }

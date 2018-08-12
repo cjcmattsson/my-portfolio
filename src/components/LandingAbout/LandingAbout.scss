@@ -2,8 +2,9 @@
   max-width: 800px;
   margin-top: 10vh;
   height: auto;
+  border: 1px solid black;
 
-  .aboutHeader {
+    .aboutHeader {
     width: 100%;
     height: auto;
     display: flex;
@@ -25,4 +26,30 @@
         }
     }
   }
+
+  .aboutSection {
+    .aboutSectionContent {
+      height: 130px;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin: 15px 0;
+
+      p {
+        margin: 0;
+        width: 80%;
+        span {
+          font-weight: bold;
+        }
+      }
+
+      .aboutImage {
+        height: 100%;
+        width: 130px;
+        background-color: $navy-blue;
+      }
+    }
+  }
+
 }

@@ -1,0 +1,29 @@
+.contactWrapper {
+  max-width: 800px;
+  margin: 10vh 0;
+  height: auto;
+  border: 1px solid black;
+
+    .contactHeader {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    border: 1px solid red;
+
+    h1 {
+      margin: 10px 0 5px;
+    }
+
+    p {
+      margin: 5px 0 25px;
+      width: 80%;
+    }
+    @media only screen and (max-width: 750px) {
+        p {
+            width: 100%;
+        }
+    }
+  }
+}

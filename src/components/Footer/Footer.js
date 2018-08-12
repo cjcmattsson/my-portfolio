@@ -5,21 +5,19 @@ class Footer extends Component {
     return (
       <div className="footerWrapper">
         <div className="footerContent">
+
           <div>
-            <p>Projects</p>
-            <p>About</p>
-            <p>Projects</p>
+            <p>+46 702 673 920</p>
+            <p>cjcmattsson@gmail.com</p>
           </div>
-          <div>
-            <p>Projects</p>
-            <p>About</p>
-            <p>Projects</p>
-          </div>
-          <div>
-            <p>Projects</p>
-            <p>About</p>
-            <p>Projects</p>
-          </div>
+            <div>
+              <p>Gothenburg</p>
+              <p>Sweden</p>
+            </div>
+            <div>
+              <p>GitHub</p>
+            </div>
+
         </div>
       </div>
     );

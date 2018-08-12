@@ -6,6 +6,7 @@ import NavLinks from '../NavItem/NavLinks';
 import HeroPage from '../HeroPage/HeroPage';
 import LandingProjectsWrapper from '../LandingProjectsWrapper/LandingProjectsWrapper';
 import LandingAbout from '../LandingAbout/LandingAbout';
+import LandingContact from '../LandingContact/LandingContact';
 import Footer from '../Footer/Footer';
 
 
@@ -19,6 +20,7 @@ class App extends Component {
         <div className="contentWrapper">
           <LandingProjectsWrapper />
           <LandingAbout />
+          <LandingContact />
         </div>
         <Footer/>
       </div>
