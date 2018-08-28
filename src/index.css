@@ -30,7 +30,8 @@ body {
   justify-content: center;
   border: 1px solid black;
   padding: 0 25px;
-  z-index: 1000; }
+  z-index: 1000;
+  transition: all 0.3s ease; }
   .Navbar .navContent {
     border: 1px solid black;
     height: 100%;
@@ -64,6 +65,55 @@ body {
             text-decoration: none;
             color: white; }
           .Navbar .navContent .menu ul li a:hover {
+            border-bottom: 2px solid white; }
+
+.NavbarScroll {
+  color: black;
+  background-color: white;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  border: 1px solid black;
+  padding: 0 25px;
+  z-index: 1000;
+  transition: all 0.3s ease; }
+  .NavbarScroll .navContent {
+    border: 1px solid black;
+    height: 100%;
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+    .NavbarScroll .navContent .logotype {
+      width: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .NavbarScroll .navContent .logotype p {
+        margin: 0; }
+    .NavbarScroll .navContent .menu {
+      flex: 1;
+      display: flex;
+      justify-content: flex-end; }
+      .NavbarScroll .navContent .menu ul {
+        width: auto;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        list-style: none;
+        padding: 0; }
+        .NavbarScroll .navContent .menu ul li {
+          margin-left: 25px; }
+          .NavbarScroll .navContent .menu ul li a {
+            font-size: 20px;
+            text-decoration: none;
+            color: black; }
+          .NavbarScroll .navContent .menu ul li a:hover {
             border-bottom: 2px solid white; }
 
 .heroPage {

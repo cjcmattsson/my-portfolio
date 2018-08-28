@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Waypoint from 'react-waypoint';
 
 import Nav from '../Nav/Nav.jsx';
 import NavLinks from '../NavItem/NavLinks';
@@ -12,11 +13,24 @@ import Footer from '../Footer/Footer';
 
 class App extends Component {
 
+  state = {
+     navbar: "Navbar",
+   }
+
+  top = () => {this.setState({navbar: "Navbar"})}
+
+  down = () => {this.setState({navbar: "NavbarScroll"})}
+
   render() {
     return (
       <div className="App">
-        <Nav navlinks={NavLinks}/>
-        <HeroPage text="Welcome Suckas"/>
+        <Nav scroll={this.state.navbar} navlinks={NavLinks}/>
+        <HeroPage text="Christopher Mattsson"/>
+        <Waypoint
+          topOffset={'30%'}
+          onEnter={this.top}
+          onLeave={this.down}
+          />
         <div className="contentWrapper">
           <LandingProjectsWrapper />
           <LandingAbout />

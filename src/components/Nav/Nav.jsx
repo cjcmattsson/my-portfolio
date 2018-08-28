@@ -10,16 +10,12 @@ class Nav extends Component {
       this.props.history.push(`${link}`);
     };
 
-    goToStore = (event) => {
-    event.preventDefault();
-    console.log(this);
-    const storeName = this.myInput.value.value;
-    this.props.history.push(`/store/${storeName}`);
-  };
-
   render(){
+
+    let scroll = this.props.scroll;
+    
     return (
-      <nav className="Navbar">
+      <nav className={scroll}>
         <div className="navContent">
             <div className="logotype">
               <p>CrippCore</p>

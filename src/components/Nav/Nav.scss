@@ -10,6 +10,7 @@
   border: 1px solid black;
   padding: 0 25px;
   z-index: 1000;
+  transition: all 0.3s ease;
 
   .navContent {
     border: 1px solid black;
@@ -59,3 +60,67 @@
       }
     }
   }
+
+  .NavbarScroll {
+    color: black;
+    background-color: white;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+    padding: 0 25px;
+    z-index: 1000;
+    transition: all 0.3s ease;
+
+    .navContent {
+      border: 1px solid black;
+      height: 100%;
+      width: 100%;
+      max-width: 800px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+    .logotype {
+      width: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      p {
+        margin: 0;
+      }
+    }
+    .menu {
+      flex: 1;
+      display: flex;
+      justify-content: flex-end;
+
+      ul {
+          width: auto;
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+          list-style: none;
+          padding: 0;
+
+          li {
+            margin-left: 25px;
+
+            a {
+              font-size: 20px;
+              text-decoration: none;
+              color: black;
+            }
+            a:hover {
+              border-bottom: 2px solid white;
+            }
+          }
+          }
+        }
+      }
+    }

@@ -2,6 +2,11 @@ import React, { Component } from 'react';
 import Particles from 'react-particles-js';
 
 class HeroPage extends Component {
+
+  shouldComponentUpdate(nextProps, nextState){
+   return false;
+  }
+
   render() {
     return (
       <div className="heroPage">

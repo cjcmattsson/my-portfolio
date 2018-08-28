@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 import LandingProject from '../LandingProject/LandingProject';
+import projects from '../projectList';
 
 class LandingProjectsWrapper extends Component {
 
     render() {
+
       return (
         <div className="projectsWrapper">
           <div className="projectsHeader">
@@ -14,10 +16,10 @@ class LandingProjectsWrapper extends Component {
             </p>
           </div>
           <div className="projectsContainer">
-            <LandingProject name="LOKALBONDEN"/>
-            <LandingProject name="THRIVE"/>
-            <LandingProject name="IPLAY"/>
-            <LandingProject name="AKADEMISKA HUS"/>
+            {projects.map((project, key) => {
+              return <LandingProject name={project.name} key={key}/>
+              })
+            }
           </div>
         </div>
       );
