@@ -135,7 +135,7 @@ body {
       margin: 0;
       color: #fff; }
 
-.landingProject {
+.Hidden {
   width: 49%;
   height: 300px;
   border: 1px solid black;
@@ -143,23 +143,58 @@ body {
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-start; }
-  .landingProject h2 {
+  .Hidden h2 {
     margin-bottom: 0; }
-  .landingProject .content {
+  .Hidden .content {
     position: relative;
     width: 100%;
     height: 80%; }
-    .landingProject .content .hidden-content {
+    .Hidden .content .hidden-content {
       height: 100%;
       width: 100%;
       position: absolute;
       bottom: 0;
       left: 0;
       z-index: 0; }
-    .landingProject .content .overlay-content {
+    .Hidden .content .overlay-content {
       background-color: #A1F0E4;
       width: 100%;
       height: 100%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      z-index: 10;
+      transition: all 0.5s ease; }
+
+@media only screen and (max-width: 750px) {
+  .landingProject {
+    width: 100%; } }
+
+.Show {
+  width: 49%;
+  height: 300px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start; }
+  .Show h2 {
+    margin-bottom: 0; }
+  .Show .content {
+    position: relative;
+    width: 100%;
+    height: 80%; }
+    .Show .content .hidden-content {
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      z-index: 0; }
+    .Show .content .overlay-content {
+      background-color: #A1F0E4;
+      width: 100%;
+      height: 50%;
       position: absolute;
       bottom: 0;
       left: 0;

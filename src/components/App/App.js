@@ -15,11 +15,14 @@ class App extends Component {
 
   state = {
      navbar: "Navbar",
+     project: "Hidden"
    }
 
   top = () => {this.setState({navbar: "Navbar"})}
-
   down = () => {this.setState({navbar: "NavbarScroll"})}
+
+  showProject = () => {this.setState({project: "Show"})}
+  hideProject = () => {this.setState({project: "Hidden"})}
 
   render() {
     return (
@@ -32,7 +35,11 @@ class App extends Component {
           onLeave={this.down}
           />
         <div className="contentWrapper">
-          <LandingProjectsWrapper />
+          <LandingProjectsWrapper
+            project={this.state.project}
+            showProject={this.showProject}
+            hideProject={this.hideProject}
+          />
           <LandingAbout />
           <LandingContact />
         </div>

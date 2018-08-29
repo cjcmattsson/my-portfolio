@@ -1,4 +1,4 @@
-.landingProject {
+.Hidden {
   width: 49%;
   height: 300px;
   border: 1px solid black;
@@ -34,7 +34,54 @@
       bottom: 0;
       left: 0;
       z-index: 10;
-      transition: all 0.5s ease; 
+      transition: all 0.5s ease;
+    }
+  }
+}
+
+@media only screen and (max-width: 750px) {
+    .landingProject {
+        width: 100%;
+    }
+}
+
+.Show {
+  width: 49%;
+  height: 300px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+
+
+  h2 {
+    margin-bottom: 0;
+  }
+
+  .content {
+    position: relative;
+    width: 100%;
+    height: 80%;
+
+    .hidden-content {
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      z-index: 0;
+
+    }
+    .overlay-content {
+      background-color: $mint-blue;
+      width: 100%;
+      height: 50%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      z-index: 10;
+      transition: all 0.5s ease;
     }
   }
 }
