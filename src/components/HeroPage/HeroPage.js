@@ -3,6 +3,7 @@ import Particles from 'react-particles-js';
 
 class HeroPage extends Component {
 
+/* This is to stop the particles from rerendering when we set state on a different component */
   shouldComponentUpdate(nextProps, nextState){
    return false;
   }

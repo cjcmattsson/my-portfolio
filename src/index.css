@@ -114,7 +114,7 @@ body {
             text-decoration: none;
             color: black; }
           .NavbarScroll .navContent .menu ul li a:hover {
-            border-bottom: 2px solid white; }
+            border-bottom: 2px solid black; }
 
 .heroPage {
   width: 100%;
@@ -135,7 +135,7 @@ body {
       margin: 0;
       color: #fff; }
 
-.Hidden {
+.landingProject {
   width: 49%;
   height: 300px;
   border: 1px solid black;
@@ -143,20 +143,20 @@ body {
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-start; }
-  .Hidden h2 {
+  .landingProject h2 {
     margin-bottom: 0; }
-  .Hidden .content {
+  .landingProject .content {
     position: relative;
     width: 100%;
     height: 80%; }
-    .Hidden .content .hidden-content {
+    .landingProject .content .hidden-content {
       height: 100%;
       width: 100%;
       position: absolute;
       bottom: 0;
       left: 0;
       z-index: 0; }
-    .Hidden .content .overlay-content {
+    .landingProject .content .overlay-content {
       background-color: #A1F0E4;
       width: 100%;
       height: 100%;
@@ -170,40 +170,15 @@ body {
   .landingProject {
     width: 100%; } }
 
-.Show {
-  width: 49%;
-  height: 300px;
-  border: 1px solid black;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-start; }
-  .Show h2 {
-    margin-bottom: 0; }
-  .Show .content {
-    position: relative;
-    width: 100%;
-    height: 80%; }
-    .Show .content .hidden-content {
-      height: 100%;
-      width: 100%;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      z-index: 0; }
-    .Show .content .overlay-content {
-      background-color: #A1F0E4;
-      width: 100%;
-      height: 50%;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      z-index: 10;
-      transition: all 0.5s ease; }
-
-@media only screen and (max-width: 750px) {
-  .landingProject {
-    width: 100%; } }
+.landingProject:hover .overlay-content {
+  background-color: #A1F0E4;
+  width: 100%;
+  height: 50%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  transition: all 0.5s ease; }
 
 .projectsWrapper {
   max-width: 800px;

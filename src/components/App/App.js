@@ -38,8 +38,8 @@ class App extends Component {
           <LandingProjectsWrapper
             project={this.state.project}
             showProject={this.showProject}
-            hideProject={this.hideProject}
-          />
+            hideProject={this.sProject}
+            />
           <LandingAbout />
           <LandingContact />
         </div>
