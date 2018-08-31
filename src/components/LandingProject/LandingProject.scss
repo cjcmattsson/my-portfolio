@@ -1,7 +1,6 @@
 .landingProject {
   width: 49%;
   height: 300px;
-  border: 1px solid black;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -25,9 +24,18 @@
       left: 0;
       z-index: 0;
 
+      h3 {
+        margin: 0;
+
+        span {
+          color: grey;
+        }
+      }
+
     }
     .overlay-content {
-      background-color: $mint-blue;
+      background-size: cover;
+      background-position: top;
       width: 100%;
       height: 100%;
       position: absolute;

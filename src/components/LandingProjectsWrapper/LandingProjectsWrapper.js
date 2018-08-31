@@ -7,7 +7,7 @@ class LandingProjectsWrapper extends Component {
     render() {
 
       return (
-        <div className="projectsWrapper">
+        <div id="projects" className="projectsWrapper">
           <div className="projectsHeader">
             <h1>Projects</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
@@ -19,7 +19,10 @@ class LandingProjectsWrapper extends Component {
             {projects.map((project, key) => {
               return <LandingProject
                   name={project.name}
-                  info={project.info} 
+                  info={project.info}
+                  slogan={project.slogan}
+                  year={project.year}
+                  pic={project.pic}
                   key={key}
                 />
               })

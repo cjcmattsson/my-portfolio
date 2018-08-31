@@ -28,12 +28,10 @@ body {
   position: fixed;
   display: flex;
   justify-content: center;
-  border: 1px solid black;
   padding: 0 25px;
   z-index: 1000;
   transition: all 0.3s ease; }
   .Navbar .navContent {
-    border: 1px solid black;
     height: 100%;
     width: 100%;
     max-width: 800px;
@@ -47,6 +45,10 @@ body {
       justify-content: center; }
       .Navbar .navContent .logotype p {
         margin: 0; }
+      .Navbar .navContent .logotype a {
+        font-size: 16px;
+        text-decoration: none;
+        color: white; }
     .Navbar .navContent .menu {
       flex: 1;
       display: flex;
@@ -77,7 +79,6 @@ body {
   position: fixed;
   display: flex;
   justify-content: center;
-  border: 1px solid black;
   padding: 0 25px;
   z-index: 1000;
   transition: all 0.3s ease;
@@ -85,7 +86,6 @@ body {
   -moz-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.38);
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.38); }
   .NavbarScroll .navContent {
-    border: 1px solid black;
     height: 100%;
     width: 100%;
     max-width: 800px;
@@ -99,6 +99,10 @@ body {
       justify-content: center; }
       .NavbarScroll .navContent .logotype p {
         margin: 0; }
+      .NavbarScroll .navContent .logotype a {
+        font-size: 16px;
+        text-decoration: none;
+        color: black; }
     .NavbarScroll .navContent .menu {
       flex: 1;
       display: flex;
@@ -130,7 +134,6 @@ body {
     width: 100%;
     height: 100vh;
     max-width: 800px;
-    border: 1px solid black;
     display: flex;
     align-items: flex-end;
     padding-bottom: 100px; }
@@ -141,7 +144,6 @@ body {
 .landingProject {
   width: 49%;
   height: 300px;
-  border: 1px solid black;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -159,8 +161,13 @@ body {
       bottom: 0;
       left: 0;
       z-index: 0; }
+      .landingProject .content .hidden-content h3 {
+        margin: 0; }
+        .landingProject .content .hidden-content h3 span {
+          color: grey; }
     .landingProject .content .overlay-content {
-      background-color: #A1F0E4;
+      background-size: cover;
+      background-position: top;
       width: 100%;
       height: 100%;
       position: absolute;
@@ -185,13 +192,12 @@ body {
     height: auto;
     display: flex;
     align-items: flex-start;
-    flex-direction: column;
-    border: 1px solid green; }
+    flex-direction: column; }
     .projectsWrapper .projectsHeader h1 {
       margin: 10px 0 5px; }
     .projectsWrapper .projectsHeader p {
       margin: 5px 0 25px;
-      width: 80%; }
+      width: 100%; }
     @media only screen and (max-width: 750px) {
       .projectsWrapper .projectsHeader p {
         width: 100%; } }
@@ -202,26 +208,23 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
-    border: 1px solid black; }
+    flex-wrap: wrap; }
 
 .aboutWrapper {
   max-width: 800px;
   margin-top: 10vh;
-  height: auto;
-  border: 1px solid black; }
+  height: auto; }
   .aboutWrapper .aboutHeader {
     width: 100%;
     height: auto;
     display: flex;
     align-items: flex-start;
-    flex-direction: column;
-    border: 1px solid red; }
+    flex-direction: column; }
     .aboutWrapper .aboutHeader h1 {
       margin: 10px 0 5px; }
     .aboutWrapper .aboutHeader p {
       margin: 5px 0 25px;
-      width: 80%; }
+      width: 100%; }
     @media only screen and (max-width: 750px) {
       .aboutWrapper .aboutHeader p {
         width: 100%; } }
@@ -245,20 +248,18 @@ body {
 .contactWrapper {
   max-width: 800px;
   margin: 10vh 0;
-  height: auto;
-  border: 1px solid black; }
+  height: auto; }
   .contactWrapper .contactHeader {
     width: 100%;
     height: auto;
     display: flex;
     align-items: flex-start;
-    flex-direction: column;
-    border: 1px solid red; }
+    flex-direction: column; }
     .contactWrapper .contactHeader h1 {
       margin: 10px 0 5px; }
     .contactWrapper .contactHeader p {
       margin: 5px 0 25px;
-      width: 80%; }
+      width: 100%; }
     @media only screen and (max-width: 750px) {
       .contactWrapper .contactHeader p {
         width: 100%; } }

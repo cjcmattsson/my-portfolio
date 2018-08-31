@@ -4,7 +4,7 @@ class LandingAbout extends Component {
 
     render() {
       return (
-        <div className="aboutWrapper">
+        <div id="about" className="aboutWrapper">
           <div className="aboutHeader">
             <h1>Who / What / Why</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque

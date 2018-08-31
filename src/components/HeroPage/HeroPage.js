@@ -10,7 +10,7 @@ class HeroPage extends Component {
 
   render() {
     return (
-      <div className="heroPage">
+      <div id="home" className="heroPage">
         <Particles
               params={{
                 "particles": {
