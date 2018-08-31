@@ -8,7 +8,7 @@ class LandingProject extends Component {
         <h2>{this.props.name}</h2>
         <div className="content">
           <div className="hidden-content">
-            <p>hjehje</p>
+            <p>{this.props.info}</p>
           </div>
           <div className="overlay-content"></div>
         </div>

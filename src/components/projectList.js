@@ -1,19 +1,19 @@
 const projects = [
   {
     name: 'Lokalbonden',
-    image: 'https://static.mathem.se/shared/images/products/large/07310960601906_c1c1.jpg',
+    info: 'A Webshop that provides home delivered locally grown vegetables'
   },
   {
     name: "Thrive",
-    image: 'http://www.vairaksaules.lv/allfiles/edieni/big/vesuvio-69.jpg?2017-06-20%2010:25:18'
+    info: 'A campaign site to promote THRIVEs vegan, ecological and fairtrade clothes'
   },
   {
     name: "IPlay",
-    image: 'https://ricottaspizza.com/wp-content/uploads/2017/03/4.png',
+    info: 'A fresh take on the website of the sports tech company'
   },
   {
     name: "Akademiska Hus",
-    image: 'http://www.pizzeriaislandstorget.com/wp-content/uploads/2016/03/hawaii-pizza.png',
+    info: 'A mobile application where clients of Akademiska Hus could handle their error reporting'
   }
 ];
 

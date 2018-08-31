@@ -75,6 +75,9 @@
     padding: 0 25px;
     z-index: 1000;
     transition: all 0.3s ease;
+    -webkit-box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.38);
+    -moz-box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.38);
+    box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.38);
 
     .navContent {
       border: 1px solid black;

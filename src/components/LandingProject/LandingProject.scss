@@ -9,7 +9,7 @@
 
 
   h2 {
-    margin-bottom: 0;
+    margin-bottom: 20px;
   }
 
   .content {
@@ -34,7 +34,7 @@
       bottom: 0;
       left: 0;
       z-index: 10;
-      transition: all 0.5s ease;
+      transition: all 0.3s cubic-bezier(0,0,0,1.4);
     }
   }
 }
@@ -47,13 +47,6 @@
 
 .landingProject:hover {
   .overlay-content {
-    background-color: $mint-blue;
-    width: 100%;
     height: 50%;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    z-index: 10;
-    transition: all 0.5s ease;
   }
 }
