@@ -15,9 +15,16 @@
     div {
       margin-right: 120px;
 
-      p {
+      p, a {
         font-size: 14px;
+        text-decoration: none;
+        color: black;
       }
+
+      a:hover {
+        border-bottom: 1px solid black;
+      }
+
     }
     div:nth-child(3) {
       margin-left: auto;

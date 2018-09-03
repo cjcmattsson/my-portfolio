@@ -11,6 +11,9 @@ class Nav extends Component {
       this.props.history.push(`${link}`);
     };
 */
+
+
+
 render(){
     let scroll = this.props.scroll;
 
@@ -18,9 +21,10 @@ render(){
       <nav className={scroll}>
         <div className="navContent">
             <div className="logotype">
-              <p><Scrollchor to="#home" className="nav-link">CrippCore</Scrollchor></p>
+              <p><Scrollchor to="#home" className="nav-link">Christopher<br/>Mattsson</Scrollchor></p>
             </div>
             <div className="menu">
+              <div className="mobileMenuButton" onClick={this.props.openMenu}>{this.props.menu}</div>
               <ul>
                 {this.props.navlinks && this.props.navlinks.map((navlink, key) => {
                   return <NavItem item={navlink} key={key}/>

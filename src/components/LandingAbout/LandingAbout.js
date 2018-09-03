@@ -15,22 +15,21 @@ class LandingAbout extends Component {
           <div className="aboutSection">
               <div className="aboutSectionContent">
                 <div className="aboutImage"></div>
-                <p><span>Who I am</span> - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
+                <p><span>Who I am</span> - Lorem ipsum dolor sit amet, consectetur Pellentesque
                 ipsum lectus, interdum at orci in.</p>
               </div>
           </div>
           <div className="aboutSection">
               <div className="aboutSectionContent">
                 <div className="aboutImage"></div>
-                <p><span>What I do</span> - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
-                ipsum lectus, interdum at orci in.</p>
+                <p><span>What I do</span> - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque</p>
               </div>
           </div>
           <div className="aboutSection">
               <div className="aboutSectionContent">
                 <div className="aboutImage"></div>
                 <p><span>Why I do it</span> - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
-                ipsum lectus, interdum at orci in.</p>
+                ipsum</p>
               </div>
           </div>
         </div>

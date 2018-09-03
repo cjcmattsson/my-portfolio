@@ -42,6 +42,12 @@
         }
       }
 
+      @media only screen and (max-width: 750px) {
+          p {
+              margin-left: 10px;
+          }
+      }
+
       .aboutImage {
         height: 100%;
         width: 130px;

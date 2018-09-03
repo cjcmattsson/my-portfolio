@@ -15,31 +15,38 @@ class App extends Component {
 
   state = {
      navbar: "Navbar",
-     project: "Hidden"
+     menuText: "Menu",
+     mobileMenu: "Close"
    }
 
   top = () => {this.setState({navbar: "Navbar"})}
   down = () => {this.setState({navbar: "NavbarScroll"})}
 
-  showProject = () => {this.setState({project: "Show"})}
-  hideProject = () => {this.setState({project: "Hidden"})}
+  openMenu = () => {
+    if (this.state.menuText === "Menu") {
+      this.setState({menuText: "Close", mobileMenu: "Open"})
+    } else {
+      this.setState({menuText: "Menu", mobileMenu: "Close"})
+    }
+  }
 
   render() {
     return (
       <div className="App">
-        <Nav scroll={this.state.navbar} navlinks={NavLinks}/>
-        <HeroPage text="Christopher Mattsson"/>
+        <Nav
+          scroll={this.state.navbar}
+          menu={this.state.menuText}
+          openMenu={this.openMenu}
+          navlinks={NavLinks}
+        />
+        <HeroPage text="Howdy!"/>
         <Waypoint
-          topOffset={'30%'}
+          topOffset={'45%'}
           onEnter={this.top}
           onLeave={this.down}
           />
         <div className="contentWrapper">
-          <LandingProjectsWrapper
-            project={this.state.project}
-            showProject={this.showProject}
-            hideProject={this.sProject}
-            />
+          <LandingProjectsWrapper/>
           <LandingAbout />
           <LandingContact />
         </div>

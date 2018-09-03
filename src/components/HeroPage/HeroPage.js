@@ -125,7 +125,8 @@ class HeroPage extends Component {
               }}
             />
         <div className="heroContainer">
-          <h1>{this.props.text}</h1>
+          <h1>Howdy compadre!</h1>
+          <p>You got some web stuff that needs development? Look no further! You got some web stuff that needs development? Look no further!</p>
         </div>
       </div>
     )
