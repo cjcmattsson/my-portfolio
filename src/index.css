@@ -75,6 +75,27 @@ body {
             color: white; }
           .Navbar .navContent .menu ul li a:hover {
             border-bottom: 2px solid white; }
+    .Navbar .navContent .Close {
+      display: none; }
+    .Navbar .navContent .Open {
+      display: block;
+      top: 70px;
+      left: 0;
+      width: 100%;
+      height: auto;
+      position: fixed; }
+      .Navbar .navContent .Open ul {
+        list-style: none;
+        padding: 0;
+        padding-left: 25px; }
+        .Navbar .navContent .Open ul li {
+          margin: 10px 0; }
+          .Navbar .navContent .Open ul li a {
+            font-size: 18px;
+            text-decoration: none;
+            color: white; }
+          .Navbar .navContent .Open ul li a:hover {
+            border-bottom: 2px solid white; }
 
 .NavbarScroll {
   color: black;
@@ -133,6 +154,31 @@ body {
             color: black; }
           .NavbarScroll .navContent .menu ul li a:hover {
             border-bottom: 2px solid black; }
+    .NavbarScroll .navContent .Close {
+      display: none; }
+    .NavbarScroll .navContent .Open {
+      display: block;
+      background-color: white;
+      top: 70px;
+      left: 0;
+      width: 100%;
+      height: auto;
+      position: fixed;
+      -webkit-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.38);
+      -moz-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.38);
+      box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.38); }
+      .NavbarScroll .navContent .Open ul {
+        list-style: none;
+        padding: 0;
+        padding-left: 25px; }
+        .NavbarScroll .navContent .Open ul li {
+          margin: 10px 0; }
+          .NavbarScroll .navContent .Open ul li a {
+            font-size: 18px;
+            text-decoration: none;
+            color: black; }
+          .NavbarScroll .navContent .Open ul li a:hover {
+            border-bottom: 2px solid white; }
 
 @media only screen and (max-width: 750px) {
   .Navbar .navContent .logotype br, .NavbarScroll .navContent .logotype br {
@@ -172,7 +218,7 @@ body {
   justify-content: flex-end;
   align-items: flex-start; }
   .landingProject h2 {
-    margin-bottom: 20px; }
+    margin-bottom: 10px; }
   .landingProject .content {
     position: relative;
     width: 100%;
@@ -188,6 +234,8 @@ body {
         margin: 0; }
         .landingProject .content .hidden-content h3 span {
           color: grey; }
+      .landingProject .content .hidden-content p {
+        margin: 5px 0; }
     .landingProject .content .overlay-content {
       background-color: #A1F0E4;
       background-size: cover;
@@ -261,8 +309,9 @@ body {
     justify-content: space-between;
     margin: 15px 0; }
     .aboutWrapper .aboutSection .aboutSectionContent p {
+      flex: 1;
       margin: 0;
-      width: 80%; }
+      margin-left: 10px; }
       .aboutWrapper .aboutSection .aboutSectionContent p span {
         font-weight: bold; }
     @media only screen and (max-width: 750px) {

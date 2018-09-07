@@ -37,6 +37,7 @@ class App extends Component {
           scroll={this.state.navbar}
           menu={this.state.menuText}
           openMenu={this.openMenu}
+          mobileMenu={this.state.mobileMenu}
           navlinks={NavLinks}
         />
         <HeroPage text="Howdy!"/>

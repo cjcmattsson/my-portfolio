@@ -16,6 +16,7 @@ class Nav extends Component {
 
 render(){
     let scroll = this.props.scroll;
+    let mobileMenu = this.props.mobileMenu;
 
     return (
       <nav className={scroll}>
@@ -25,6 +26,13 @@ render(){
             </div>
             <div className="menu">
               <div className="mobileMenuButton" onClick={this.props.openMenu}>{this.props.menu}</div>
+              <ul>
+                {this.props.navlinks && this.props.navlinks.map((navlink, key) => {
+                  return <NavItem item={navlink} key={key}/>
+                })}
+              </ul>
+            </div>
+            <div className={mobileMenu}>
               <ul>
                 {this.props.navlinks && this.props.navlinks.map((navlink, key) => {
                   return <NavItem item={navlink} key={key}/>
