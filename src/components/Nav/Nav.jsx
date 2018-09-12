@@ -17,15 +17,16 @@ class Nav extends Component {
 render(){
     let scroll = this.props.scroll;
     let mobileMenu = this.props.mobileMenu;
+    let menuOpenClose = this.props.changeMenu;
 
     return (
       <nav className={scroll}>
         <div className="navContent">
             <div className="logotype">
-              <p><Scrollchor to="#home" className="nav-link">Christopher<br/>Mattsson</Scrollchor></p>
+              <p><Scrollchor to="#home" className="nav-link" beforeAnimate={this.props.logoCloseMenu}>Christopher<br/>Mattsson</Scrollchor></p>
             </div>
             <div className="menu">
-              <div className="mobileMenuButton" onClick={this.props.openMenu}>{this.props.menu}</div>
+              <div className="mobileMenuButton" onClick={menuOpenClose}>{this.props.menu}</div>
               <ul>
                 {this.props.navlinks && this.props.navlinks.map((navlink, key) => {
                   return <NavItem item={navlink} key={key}/>
@@ -35,7 +36,7 @@ render(){
             <div className={mobileMenu}>
               <ul>
                 {this.props.navlinks && this.props.navlinks.map((navlink, key) => {
-                  return <NavItem item={navlink} key={key}/>
+                  return <NavItem changeMenu={menuOpenClose} item={navlink} key={key}/>
                 })}
               </ul>
             </div>

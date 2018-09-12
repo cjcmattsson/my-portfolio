@@ -11,18 +11,23 @@ import LandingContact from '../LandingContact/LandingContact';
 import Footer from '../Footer/Footer';
 
 
+import FullPageProject from '../FullPageProject/FullPageProject';
+
+
 class App extends Component {
 
   state = {
      navbar: "Navbar",
      menuText: "Menu",
-     mobileMenu: "Close"
+     mobileMenu: "Close",
+     projectHeader: "",
+     projectImage: "",
    }
 
   top = () => {this.setState({navbar: "Navbar"})}
   down = () => {this.setState({navbar: "NavbarScroll"})}
 
-  openMenu = () => {
+  changeMenu = () => {
     if (this.state.menuText === "Menu") {
       this.setState({menuText: "Close", mobileMenu: "Open"})
     } else {
@@ -30,24 +35,41 @@ class App extends Component {
     }
   }
 
+  closeMenu = () => {
+    if (this.state.menuText === "Close") {
+      this.setState({menuText: "Menu", mobileMenu: "Close"})
+    }
+  }
+
+  showProjectContent = (name, image) => {
+    console.log("hej");
+    this.setState({
+      projectHeader: name,
+      projectImage: image,
+    })
+  }
+
   render() {
     return (
       <div className="App">
         <Nav
           scroll={this.state.navbar}
+          logoCloseMenu={this.closeMenu}
           menu={this.state.menuText}
-          openMenu={this.openMenu}
+          changeMenu={this.changeMenu}
           mobileMenu={this.state.mobileMenu}
           navlinks={NavLinks}
         />
-        <HeroPage text="Howdy!"/>
+      <HeroPage/>
         <Waypoint
           topOffset={'45%'}
           onEnter={this.top}
           onLeave={this.down}
           />
         <div className="contentWrapper">
-          <LandingProjectsWrapper/>
+          <LandingProjectsWrapper
+            showProjectContent={this.showProjectContent}
+            />
           <LandingAbout />
           <LandingContact />
         </div>

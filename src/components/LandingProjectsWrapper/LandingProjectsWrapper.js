@@ -18,11 +18,13 @@ class LandingProjectsWrapper extends Component {
           <div className="projectsContainer">
             {projects.map((project, key) => {
               return <LandingProject
+                  showProjectContent={this.props.showProjectContent}
                   name={project.name}
                   info={project.info}
                   slogan={project.slogan}
                   year={project.year}
                   pic={project.pic}
+                  longText={project.longText}
                   key={key}
                 />
               })
