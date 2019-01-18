@@ -10,16 +10,13 @@ import LandingAbout from '../LandingAbout/LandingAbout';
 import LandingContact from '../LandingContact/LandingContact';
 import Footer from '../Footer/Footer';
 
-
-import FullPageProject from '../FullPageProject/FullPageProject';
-
-
 class App extends Component {
 
   state = {
      navbar: "Navbar",
      menuText: "Menu",
      mobileMenu: "Close",
+     showProject: false,
      projectHeader: "",
      projectImage: "",
    }
@@ -42,11 +39,21 @@ class App extends Component {
   }
 
   showProjectContent = (name, image) => {
-    console.log("hej");
-    this.setState({
-      projectHeader: name,
-      projectImage: image,
-    })
+    if (this.state.projectHeader === "") {
+      this.setState({
+        showProject: !this.state.showProject,
+        projectHeader: name,
+        projectImage: image,
+      });
+      document.querySelector('body').style.overflow = "hidden";
+    } else {
+      document.querySelector('body').removeAttribute("style");
+      this.setState({
+        showProject: !this.state.showProject,
+        projectHeader: "",
+        projectImage: "",
+      })
+    }
   }
 
   render() {
@@ -69,6 +76,9 @@ class App extends Component {
         <div className="contentWrapper">
           <LandingProjectsWrapper
             showProjectContent={this.showProjectContent}
+            projectHeader={this.state.projectHeader}
+            projectImage={this.state.projectImage}
+            showProject={this.state.showProject}
             />
           <LandingAbout />
           <LandingContact />

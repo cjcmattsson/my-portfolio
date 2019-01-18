@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 
 
 class LandingProject extends Component {
+
   render() {
     return (
       <div className="landingProject"
@@ -13,6 +14,7 @@ class LandingProject extends Component {
           )}
         }
         >
+        <div className="expandingBox"></div>
         <h2>{this.props.name}</h2>
         <div className="content">
           <div className="hidden-content">

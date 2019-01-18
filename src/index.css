@@ -17,7 +17,8 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 0 25px; }
+    padding: 0 25px;
+    max-width: 100%; }
 
 .Navbar {
   color: white;
@@ -256,6 +257,44 @@ body {
 .landingProject:hover .overlay-content {
   height: 50%; }
 
+.fullPageProjectWrapper {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1002;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .fullPageProjectWrapper .overlay {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1001;
+    background-color: rgba(54, 54, 54, 0.2); }
+  .fullPageProjectWrapper .content {
+    background-color: white;
+    z-index: 1002;
+    height: 98%;
+    width: 98%;
+    -webkit-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.38);
+    -moz-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.38);
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.38);
+    padding: 20px; }
+    .fullPageProjectWrapper .content header {
+      color: black;
+      width: 100%;
+      height: 100px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between; }
+      .fullPageProjectWrapper .content header h2, .fullPageProjectWrapper .content header .closeProject {
+        color: black;
+        margin: 0; }
+
 .projectsWrapper {
   max-width: 800px;
   margin-top: 10vh;
@@ -347,7 +386,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 25px 25px; }
+  padding: 25px 25px;
+  max-width: 100%; }
   .footerWrapper .footerContent {
     max-width: 800px;
     width: 100%;
